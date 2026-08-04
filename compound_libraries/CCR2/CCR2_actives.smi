@@ -1,0 +1,16 @@
+CC(=O)C1C(=O)C(=O)N(c2ccc(Cl)cc2F)C1C1CCCCC1	ASD10910002
+CCC(Nc1c(NC2CC=NC(C(=O)N(C)C)C2=O)c(=O)c1=O)c1cc(C(C)C)co1	ASD10910003
+O=C(CCCn1ccnn1)C1C(=O)C(=O)N(c2ccc(Br)cc2F)C1C1CCCCC1	ASD10910005
+O=C(CCCn1ccnn1)C1C(=O)C(=O)N(c2ccc(Cl)cc2F)C1C1CCCCC1	ASD10910004
+O=C(NCCOCCOCCn1ccnn1)c1ccc(Oc2ccc(Cl)cc2NS(=O)(=O)c2ccc(Cl)c(C(F)(F)F)c2)cc1	ASD10910007
+O=C(NCCOCCOCCn1ccnn1)c1ccc(Oc2ccc(Cl)cc2NS(=O)(=O)c2ccc(Cl)c(Cl)c2)cc1	ASD10910006
+O=C(NCCOCCOCCn1ccnn1)c1ccc(Oc2ncc(Cl)cc2NS(=O)(=O)c2ccc(Cl)c(C(F)(F)F)c2)cc1	ASD10910008
+O=C(NCCOCCOCCn1ccnn1)c1ccccc1Oc1ccc(Cl)cc1NS(=O)(=O)c1ccc(Cl)c(Cl)c1	ASD10910009
+O=C(NCc1c[nH]nn1)c1ccc(Oc2ccc(Cl)cc2NS(=O)(=O)c2ccc(Cl)c(Cl)c2)cc1	ASD10910011
+O=C(NCc1c[nH]nn1)c1ccc(Oc2ncc(Cl)cc2NS(=O)(=O)c2ccc(Cl)c(C(F)(F)F)c2)cc1	ASD10910010
+O=C(NCc1c[nH]nn1)c1ccccc1Oc1ccc(Cl)cc1NS(=O)(=O)c1ccc(Cl)c(Cl)c1	ASD10910012
+O=C(O)c1ccccc1Oc1ccc(Cl)cn1	ASD10910017
+O=S(=O)(Nc1ccccc1)c1ccc(Cl)c(Cl)c1	ASD10910014
+O=S(=O)(Nc1ccccc1)c1ccccc1	ASD10910016
+O=S(=O)(Nc1cncc(Cl)c1)c1ccc(Cl)c(C(F)(F)F)c1	ASD10910013
+O=S(=O)(Nc1cncc(Cl)c1)c1ccccc1	ASD10910015
