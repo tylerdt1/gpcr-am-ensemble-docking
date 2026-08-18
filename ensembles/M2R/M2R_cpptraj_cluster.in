@@ -1,0 +1,10 @@
+parm acm2-6oik-pro.parm7
+reference acm2-6oik-pro.pdb
+trajin /path/to/traj/gamd-1/md-imaged.nc 1 last                                                                                                                               
+trajin /path/to/traj/gamd-2/md-imaged.nc 1 last 
+trajin /path/to/traj/gamd-3/md-imaged.nc 1 last
+strip !:1-275
+
+#alignment for the pocket and do the clustering
+rms reference mass out rmsd-pocket.dat :62,65,66,69,86,153,158,159,160,163,164,227,231,235,239,240,243&!@H=
+cluster C0 hieragglo averagelinkage clusters 10 epsilonplot epsilonplot.dat rms :62,65,66,69,86,153,158,159,160,163,164,227,231,235,239,240,243&!@H= nofit sieve 500 out cnumvtime.dat summary summary.dat info info.dat singlerepout singlerep.pdb singlerepfmt pdb

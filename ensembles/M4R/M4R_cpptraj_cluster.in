@@ -1,0 +1,17 @@
+parm sys-protein.prmtop
+reference sys-protein.pdb
+trajin /path/to/traj/gamd-1/md-imaged.nc 1 last                                                                                                                               
+trajin /path/to/traj/gamd-2/md-imaged.nc 1 last 
+trajin /path/to/traj/gamd-3/md-imaged.nc 1 last
+trajin /path/to/traj/gamd-4/md-imaged.nc 1 last                                                                                                                               
+trajin /path/to/traj/gamd-5/md-imaged.nc 1 last 
+trajin /path/to/traj/gamd-6/md-imaged.nc 1 last
+
+#alignment for the pocket and do the clustering
+rms reference mass out rmsd-pocket.dat :687,690,691,694,695,696,706,781,782,783,784,785,788,852,856,859,868,869,871,872,875,907,908&!@H=
+cluster C0 hieragglo averagelinkage clusters 10 \
+epsilonplot epsilonplot.dat rms :687,690,691,694,695,696,706,781,782,783,784,785,788,852,856,859,868,869,871,872,875,907,908&!@H= sieve 500 nofit \  
+out cnumvtime.dat \
+summary summary.dat \
+info info.dat \ 
+singlerepout singlerep.pdb singlerepfmt pdb \

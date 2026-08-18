@@ -1,0 +1,12 @@
+parm ccr2-5t1a-pro.parm7 
+reference ccr2-5t1a-pro.pdb
+trajin /path/to/traj/gamd-1/md-imaged.nc 1 last                                                                                                                               
+trajin /path/to/traj/gamd-2/md-imaged.nc 1 last 
+trajin /path/to/traj/gamd-3/md-imaged.nc 1 last
+
+
+#alignment for the pocket and do the clustering
+autoimage
+rms reference mass :1-278@CA
+rms reference mass out rmsd-pocket.dat :28,32,42,46,99,103,198,201,202,205,206,266,270,271,272,273,276&!@H=
+cluster C0 hieragglo averagelinkage clusters 10 epsilonplot epsilonplot.dat rms :28,32,42,46,99,103,198,201,202,205,206,266,270,271,272,273,276&!@H= nofit sieve 500 out cnumvtime.dat summary summary.dat info info.dat singlerepout singlerep.pdb singlerepfmt pdb
